@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+
+        <title>Nova</title>
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <link rel="stylesheet" href="./css/tailwind.css" />
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+        />
+    </head>
+    <body
+        class="subpixel-antialiased font-body font-extralight bg-smoke-white-500 relative"
+    >
+        <header
+            class="site-header fixed w-full top-0 isolate z-40 backdrop-blur"
+        >
+            <div
+                class="container px-4 sm:px-10 max-w-none xl:max-w-screen-2xl mx-auto py-2 lg:py-4 grid grid-cols-3 items-center font-body font-bold text-sapphire-blue-500"
+            >
+                <div class="col-span-1 lg:hidden lg:order-4">
+                    <a href="#">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="w-8 h-8 text-sapphire-blue-500"
+                            viewBox="0 0 256 256"
+                        >
+                            <rect width="256" height="256" fill="none"></rect>
+                            <line
+                                x1="40"
+                                y1="128"
+                                x2="216"
+                                y2="128"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="24"
+                            ></line>
+                            <line
+                                x1="40"
+                                y1="64"
+                                x2="216"
+                                y2="64"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="24"
+                            ></line>
+                            <line
+                                x1="40"
+                                y1="192"
+                                x2="216"
+                                y2="192"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="24"
+                            ></line>
+                        </svg>
+                    </a>
+                </div>
+                <div id="branding" class="lg:order-2 pb-3 lg:pb-0">
+                    <a
+                        href="index.html"
+                        class="hover:text-sapphire-blue-400 transition duration-150 ease-out"
+                    >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 810 810"
+                            xml:space="preserve"
+                            class="logo-mark h-14 mx-auto opacity-0 -translate-y-8 text-sapphire-blue-500"
+                        >
+                            <use xlink:href="#nova-mark" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="col-span-1 text-right uppercase lg:order-3">
+                    <a
+                        href="#"
+                        class="hover:text-sapphire-blue-400 transition duration-150 ease-out"
+                        >Book Now</a
+                    >
+                </div>
+                <div
+                    class="col-span-3 lg:order-1 lg:col-span-1 border-t border-sapphire-blue-200 lg:border-t-0"
+                >
+                    <nav
+                        class="flex flex-col space-y-6 py-8 lg:py-0 text-center lg:text-left lg:flex-row lg:items-center lg:space-y-0 lg:space-x-8"
+                    >
+                        <a
+                            href="listing.html"
+                            class="hover:text-sapphire-blue-400 transition duration-150 ease-out"
+                            >Villas
+                        </a>
+                        <a
+                            href="listing.html"
+                            class="hover:text-sapphire-blue-400 transition duration-150 ease-out"
+                            >Food
+                        </a>
+                        <a
+                            href="listing.html"
+                            class="hover:text-sapphire-blue-400 transition duration-150 ease-out"
+                            >Experiences</a
+                        >
+                        <a
+                            href="listing.html"
+                            class="hover:text-sapphire-blue-400 transition duration-150 ease-out"
+                            >Spa
+                        </a>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div class="hero-wrap relative h-screen">
+            <div
+                class="hero w-full h-screen overflow-hidden"
+                style="
+                    background-image: url('https://images.unsplash.com/photo-1573843981267-be1999ff37cd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80');
+                "
+            >
+                <div
+                    class="nova-branding container max-w-screen-xl mx-auto px-4 sm:px-2 pt-24"
+                >
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 358 186"
+                        xml:space="preserve"
+                        class="nova-branding--logo w-72 mx-auto text-sapphire-blue-500"
+                    >
+                        <use xlink:href="#nova-logo" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div
+            class="min-h-screen flex flex-col items-center justify-center relative"
+        >
+            <div class="max-w-screen-md mx-auto space-y-4">
+                <h3 class="text-lg font-body font-bold mb-2 uppercase">
+                    This Summer
+                </h3>
+                <h1
+                    class="text-6xl font-title font-extralight text-sunset-yellow-500 mb-2"
+                >
+                    Your soulful retreat
+                </h1>
+                <p class="font-title text-xl font-normal">
+                    There’s a bright star resort
+                </p>
+
+                <p class="font-body font-light text-sm">
+                    Whether you’re traveling alone, with loved ones, friends or
+                    family – everyone is welcome to our home-from-home. Here,
+                    you can do as much or as little as you like whatever is good
+                    for the soul. Go diving, hit the gym or sit under the palm
+                    tree and luxuriate in something simple and real. Feel happy
+                    to be here. Happy in the moment. Smart, playful, rooted and
+                    responsible, NOVA Maldives embodies the very essence of the
+                    Pulse Hotels & Resorts brand, infusing genuine hospitality
+                    with a human touch and innovative solutions that make use of
+                    the latest technology - not to mention a playful spirit.
+                </p>
+                <p class="font-body font-bold text-sm">
+                    We all have at least one soul place in the world; NOVA is
+                    yours.
+                </p>
+            </div>
+        </div> -->
+
+        <section class="sectionOne py-20">
+            <div
+                class="container px-4 sm:px-10 max-w-screen-xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-10 sm:gap-y-2 mb-24"
+            >
+                <div class="col-span-1 sm:col-span-1">
+                    <h1
+                        class="text-5xl sm:text-7xl font-title font-extralight text-paradise-pink-500 my-10"
+                    >
+                        Your soul place
+                    </h1>
+                    <div class="prose mb-6 max-w-md mx-auto">
+                        <p>
+                            There’s a bright new star resort in the Maldives,
+                            one that’s like no other.<br />
+                            A modern All-Inclusive Community Concept, a laidback
+                            place with a soul that sparks joy and is designed
+                            for real connection. Somewhere to feel your very
+                            best—and most taken care of.
+                        </p>
+                        <p>
+                            Smart, playful, rooted and responsible, NOVA
+                            Maldives embodies the very essence of the Pulse
+                            Hotels & Resorts brand, infusing genuine hospitality
+                            with a human touch and innovative solutions that
+                            make use of the latest technology - not to mention a
+                            playful spirit.
+                        </p>
+                        <p>
+                            <strong
+                                >We all have at least one soul place in the
+                                world; NOVA is yours.
+                            </strong>
+                        </p>
+                    </div>
+                    <div class="line-button group max-w-md mx-auto">
+                        <a
+                            href="#"
+                            class="inline-block font-bold py-3 text-sapphire-blue-900 hover:text-sapphire-blue-500 transition ease-out duration-150"
+                            >About Nova</a
+                        >
+                        <span
+                            class="block relative w-[80px] h-[2px] bg-sapphire-blue-900 overflow-hidden"
+                        >
+                            <span
+                                class="absolute inset-0 w-[80px] h-[2px] bg-sapphire-blue-400 -translate-x-[80px] group-hover:animate-draw-line overflow-hidden transition duration-150 ease-out"
+                            ></span>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="col-span-1 sm:col-span-1 relative">
+                    <div class="photo-visuals flex justify-center pt-24">
+                        <div
+                            class="visual-item photo-card-1 inline-block max-w-md relative rotate-0 -translate-y-6 sm:-translate-y-8 scale-75 lg:scale-100"
+                        >
+                            <figure
+                                class="w-full bg-white pb-8 sm:pb-12 p-3 sm:p-5 aspect-square relative shadow-effect-2 shadow-sm"
+                            >
+                                <img
+                                    src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+                                    alt="Villa"
+                                    class="w-full h-full object-cover object-center"
+                                />
+                            </figure>
+                        </div>
+                        <!-- visual-2 -->
+                    </div>
+
+                    <div
+                        class="logo-mark-visuals absolute -left-8 scale-75 sm:scale-100 sm:left-[5%] bottom-4 z-30"
+                    >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 810 810"
+                            xml:space="preserve"
+                            class="h-16 -mb-8 text-paradise-pink-400"
+                        >
+                            <use xlink:href="#nova-mark" />
+                        </svg>
+
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 810 810"
+                            xml:space="preserve"
+                            class="h-44 text-paradise-pink-500"
+                        >
+                            <use xlink:href="#nova-mark" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20">
+            <div
+                class="container px-4 sm:px-10 max-w-screen-sm mx-auto text-center mb-24"
+            >
+                <h1
+                    class="text-5xl sm:text-7xl font-title font-extralight text-sunset-yellow-500 mb-10"
+                >
+                    Feed your soul
+                </h1>
+                <div class="">
+                    <div class="prose mb-6">
+                        <p>
+                            Nourish the soul with good food and good company in
+                            our vibrant dining areas, pool and communal spaces
+                            that will feed your connections and laughter. Around
+                            every corner, you’ll find spots to kick back and
+                            socialize or retreat and take a moment to reconnect.
+                        </p>
+                    </div>
+
+                    <div class="line-button group">
+                        <a
+                            href="#"
+                            class="inline-block font-bold py-3 text-sapphire-blue-900 hover:text-sapphire-blue-500 transition ease-out duration-150"
+                            >Explore Nova Dining</a
+                        >
+                        <span
+                            class="block relative w-[80px] h-[2px] mx-auto bg-sapphire-blue-900 overflow-hidden"
+                        >
+                            <span
+                                class="absolute inset-0 w-[80px] h-[2px] bg-sapphire-blue-400 -translate-x-[80px] group-hover:animate-draw-line overflow-hidden transition duration-150 ease-out"
+                            ></span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="offers-carousel container px-4 sm:px-10 max-w-screen-xl mx-auto relative"
+            >
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="item-card swiper-slide">
+                            <figure
+                                class="w-full aspect-[334/384] bg-slate-400 overflow-hidden"
+                            >
+                                <img
+                                    src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+                                    alt="Villa"
+                                    class="w-full h-full object-cover object-center"
+                                />
+                            </figure>
+                        </div>
+                        <!-- card -->
+
+                        <div class="item-card swiper-slide">
+                            <figure
+                                class="w-full aspect-[334/384] bg-slate-400 overflow-hidden"
+                            >
+                                <img
+                                    src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+                                    alt="Villa"
+                                    class="w-full h-full object-cover object-center"
+                                />
+                            </figure>
+                        </div>
+                        <!-- card -->
+
+                        <div class="item-card swiper-slide">
+                            <figure
+                                class="w-full aspect-[334/384] bg-slate-400 overflow-hidden"
+                            >
+                                <img
+                                    src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+                                    alt="Villa"
+                                    class="w-full h-full object-cover object-center"
+                                />
+                            </figure>
+                        </div>
+                        <!-- card -->
+
+                        <div class="item-card swiper-slide">
+                            <figure
+                                class="w-full aspect-[334/384] bg-slate-400 overflow-hidden"
+                            >
+                                <img
+                                    src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+                                    alt="Villa"
+                                    class="w-full h-full object-cover object-center"
+                                />
+                            </figure>
+                        </div>
+                        <!-- card -->
+                    </div>
+                    <!-- wrap -->
+                </div>
+
+                <div
+                    class="next-arrow group absolute p-4 top-1/3 lg:top-5 -right-3 lg:-right-2 xl:-right-8 z-20 transition-all duration-150 ease-out"
+                >
+                    <svg
+                        width="99"
+                        height="10"
+                        viewBox="0 0 99 10"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="text-sapphire-blue-500 group-hover:text-sapphire-blue-900"
+                    >
+                        <path
+                            d="M93.6245 0.219107L98.61 4.2075C98.8472 4.39035 99 4.67731 99 4.99996C99 5.32262 98.8472 5.60958 98.61 5.79243L93.6245 9.78082C93.1933 10.1258 92.564 10.0559 92.2189 9.62464C91.8739 9.19338 91.9439 8.56409 92.3751 8.21908L95.149 5.99996H1C0.447715 5.99996 0 5.55225 0 4.99996C0 4.44768 0.447715 3.99996 1 3.99996H95.149L92.3751 1.78084C91.9439 1.43584 91.8739 0.806543 92.2189 0.375281C92.564 -0.0559811 93.1933 -0.125903 93.6245 0.219107Z"
+                            fill="currentColor"
+                        />
+                    </svg>
+                </div>
+                <div
+                    class="prev-arrow group absolute p-4 bottom-1/3 lg:bottom-5 -left-3 lg:-left-2 xl:-left-8 z-20 transition-all duration-150 ease-out"
+                >
+                    <svg
+                        width="99"
+                        height="10"
+                        viewBox="0 0 99 10"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="text-sapphire-blue-500 group-hover:text-sapphire-blue-900"
+                    >
+                        <path
+                            d="M5.37549 0.219107L0.389992 4.2075C0.152802 4.39035 0 4.67731 0 4.99996C0 5.32262 0.152809 5.60958 0.390007 5.79243L5.37549 9.78082C5.80675 10.1258 6.43604 10.0559 6.78105 9.62464C7.12606 9.19338 7.05614 8.56409 6.62488 8.21908L3.85098 5.99996H98C98.5523 5.99996 99 5.55225 99 4.99996C99 4.44768 98.5523 3.99996 98 3.99996H3.85098L6.62488 1.78084C7.05614 1.43584 7.12606 0.806543 6.78105 0.375281C6.43604 -0.0559811 5.80675 -0.125903 5.37549 0.219107Z"
+                            fill="currentColor"
+                        />
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20">
+            <div
+                class="container px-4 sm:px-10 max-w-screen-xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-10 sm:gap-y-2 mb-24"
+            >
+                <h1
+                    class="col-span-1 sm:col-span-3 text-5xl sm:text-7xl font-title font-extralight text-paradise-pink-500 max-w-sm"
+                >
+                    A sense of place
+                </h1>
+                <div class="col-span-1 md:col-span-2 md:col-start-2">
+                    <div class="prose mb-6">
+                        <p>
+                            Land and ocean villas with private terraces and
+                            seemingly endless Indian Ocean views, natural
+                            splendor and much more abound. Awash in custom-made
+                            furniture, neutral whites, natural light and warm
+                            materials, the pared-back and minimalist interiors
+                            deliver a truly relaxing atmosphere.
+                        </p>
+                        <p>
+                            There’s a real sense of being a million miles from
+                            your everyday life but somehow cozy in a familiar
+                            luxury with all the things you need to stay
+                            connected. We’re talking king-size beds, rainfall
+                            showers, Apple TV, High-Speed Internet, not to
+                            mention plastic-free and refillable luxury organic
+                            bath amenities.
+                        </p>
+                    </div>
+
+                    <div class="line-button group">
+                        <a
+                            href="#"
+                            class="inline-block font-bold py-3 text-sapphire-blue-900 hover:text-sapphire-blue-500 transition ease-out duration-150"
+                            >Explore the Nova Villas</a
+                        >
+                        <span
+                            class="block relative w-[80px] h-[2px] bg-sapphire-blue-900 overflow-hidden"
+                        >
+                            <span
+                                class="absolute inset-0 w-[80px] h-[2px] bg-sapphire-blue-400 -translate-x-[80px] group-hover:animate-draw-line overflow-hidden transition duration-150 ease-out"
+                            ></span>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="col-span-1 sm:col-span-3 relative">
+                    <div class="photo-visuals flex justify-center pt-24">
+                        <div
+                            class="visual-item inline-block max-w-xl relative -rotate-12 translate-x-4 sm:translate-x-0"
+                        >
+                            <figure
+                                class="w-full bg-white pb-8 sm:pb-12 p-3 sm:p-5 aspect-[540/440] shadow-effect shadow-sm relative"
+                            >
+                                <img
+                                    src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+                                    alt="Villa"
+                                    class="w-full h-full object-cover object-center"
+                                />
+                            </figure>
+                        </div>
+                        <!-- visual-1 -->
+
+                        <div
+                            class="visual-item inline-block max-w-xs relative rotate-12 -translate-x-6 sm:-translate-x-8"
+                        >
+                            <figure
+                                class="w-full bg-white pb-8 sm:pb-12 p-3 sm:p-5 aspect-square relative shadow-effect-2 shadow-sm"
+                            >
+                                <img
+                                    src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+                                    alt="Villa"
+                                    class="w-full h-full object-cover object-center"
+                                />
+                            </figure>
+                        </div>
+                        <!-- visual-2 -->
+                    </div>
+
+                    <div
+                        class="logo-mark-visuals absolute -right-8 scale-75 sm:scale-100 sm:right-[20%] bottom-4 z-30"
+                    >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 810 810"
+                            xml:space="preserve"
+                            class="h-16 -mb-8 text-sapphire-blue-400"
+                        >
+                            <use xlink:href="#nova-mark" />
+                        </svg>
+
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 810 810"
+                            xml:space="preserve"
+                            class="h-48 text-sapphire-blue-500"
+                        >
+                            <use xlink:href="#nova-mark" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20">
+            <div
+                class="container px-4 sm:px-10 max-w-screen-xl mx-auto grid grid-cols-1 sm:grid-cols-5 gap-y-8 mb-24"
+            >
+                <h1
+                    class="col-span-1 sm:col-span-2 text-5xl sm:text-7xl font-title font-extralight text-sapphire-blue-500 max-w-md"
+                >
+                    Nova Offers
+                </h1>
+                <div class="col-span-1 sm:col-span-3">
+                    <p class="text-gray-600 text-base mb-3 mt-8">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Sed porttitor sodales lacinia. Ut ligula nulla, sodales
+                        ut ante et, faucibus egestas sapien. Aenean ipsum nisi,
+                        dapibus at est vel, fringilla cursus elit.
+                    </p>
+
+                    <div>
+                        <div class="actions space-y-2">
+                            <div class="line-button group">
+                                <a
+                                    href="#"
+                                    class="inline-block text-base font-bold py-3 text-sapphire-blue-900 hover:text-sapphire-blue-500 transition ease-out duration-150"
+                                    >Explore our offers
+                                </a>
+                                <span
+                                    class="block relative w-[80px] h-[2px] bg-sapphire-blue-900 overflow-hidden"
+                                >
+                                    <span
+                                        class="absolute inset-0 w-[80px] h-[2px] bg-sapphire-blue-400 -translate-x-[80px] group-hover:animate-draw-line overflow-hidden transition duration-150 ease-out"
+                                    ></span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="offers-carousel container px-4 sm:px-10 max-w-screen-xl mx-auto relative"
+            >
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="item-card swiper-slide">
+                            <figure
+                                class="w-full aspect-[334/384] bg-slate-400 overflow-hidden"
+                            >
+                                <img
+                                    src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+                                    alt="Villa"
+                                    class="w-full h-full object-cover object-center"
+                                />
+                            </figure>
+                        </div>
+                        <!-- card -->
+
+                        <div class="item-card swiper-slide">
+                            <figure
+                                class="w-full aspect-[334/384] bg-slate-400 overflow-hidden"
+                            >
+                                <img
+                                    src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+                                    alt="Villa"
+                                    class="w-full h-full object-cover object-center"
+                                />
+                            </figure>
+                        </div>
+                        <!-- card -->
+
+                        <div class="item-card swiper-slide">
+                            <figure
+                                class="w-full aspect-[334/384] bg-slate-400 overflow-hidden"
+                            >
+                                <img
+                                    src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+                                    alt="Villa"
+                                    class="w-full h-full object-cover object-center"
+                                />
+                            </figure>
+                        </div>
+                        <!-- card -->
+
+                        <div class="item-card swiper-slide">
+                            <figure
+                                class="w-full aspect-[334/384] bg-slate-400 overflow-hidden"
+                            >
+                                <img
+                                    src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+                                    alt="Villa"
+                                    class="w-full h-full object-cover object-center"
+                                />
+                            </figure>
+                        </div>
+                        <!-- card -->
+                    </div>
+                    <!-- wrap -->
+                </div>
+
+                <div
+                    class="next-arrow group absolute p-4 top-1/3 lg:top-5 -right-3 lg:-right-2 xl:-right-8 z-20 transition-all duration-150 ease-out"
+                >
+                    <svg
+                        width="99"
+                        height="10"
+                        viewBox="0 0 99 10"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="text-sapphire-blue-500 group-hover:text-sapphire-blue-900"
+                    >
+                        <path
+                            d="M93.6245 0.219107L98.61 4.2075C98.8472 4.39035 99 4.67731 99 4.99996C99 5.32262 98.8472 5.60958 98.61 5.79243L93.6245 9.78082C93.1933 10.1258 92.564 10.0559 92.2189 9.62464C91.8739 9.19338 91.9439 8.56409 92.3751 8.21908L95.149 5.99996H1C0.447715 5.99996 0 5.55225 0 4.99996C0 4.44768 0.447715 3.99996 1 3.99996H95.149L92.3751 1.78084C91.9439 1.43584 91.8739 0.806543 92.2189 0.375281C92.564 -0.0559811 93.1933 -0.125903 93.6245 0.219107Z"
+                            fill="currentColor"
+                        />
+                    </svg>
+                </div>
+                <div
+                    class="prev-arrow group absolute p-4 bottom-1/3 lg:bottom-5 -left-3 lg:-left-2 xl:-left-8 z-20 transition-all duration-150 ease-out"
+                >
+                    <svg
+                        width="99"
+                        height="10"
+                        viewBox="0 0 99 10"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="text-sapphire-blue-500 group-hover:text-sapphire-blue-900"
+                    >
+                        <path
+                            d="M5.37549 0.219107L0.389992 4.2075C0.152802 4.39035 0 4.67731 0 4.99996C0 5.32262 0.152809 5.60958 0.390007 5.79243L5.37549 9.78082C5.80675 10.1258 6.43604 10.0559 6.78105 9.62464C7.12606 9.19338 7.05614 8.56409 6.62488 8.21908L3.85098 5.99996H98C98.5523 5.99996 99 5.55225 99 4.99996C99 4.44768 98.5523 3.99996 98 3.99996H3.85098L6.62488 1.78084C7.05614 1.43584 7.12606 0.806543 6.78105 0.375281C6.43604 -0.0559811 5.80675 -0.125903 5.37549 0.219107Z"
+                            fill="currentColor"
+                        />
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20 relative">
+            <div class="container px-4 sm:px-10 max-w-screen-xl mx-auto mb-24">
+                <h1
+                    class="text-5xl sm:text-7xl font-title font-extralight text-paradise-pink-500 max-w-md"
+                >
+                    Good to know
+                </h1>
+
+                <div
+                    class="logo-mark-visuals absolute -right-8 scale-75 sm:scale-100 sm:right-1/4 top-16 z-30"
+                >
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 810 810"
+                        xml:space="preserve"
+                        class="h-24 -mb-16 text-mist-blue-400"
+                    >
+                        <use xlink:href="#nova-mark" />
+                    </svg>
+
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 810 810"
+                        xml:space="preserve"
+                        class="h-56 text-mist-blue-500"
+                    >
+                        <use xlink:href="#nova-mark" />
+                    </svg>
+                </div>
+            </div>
+
+            <div
+                class="container grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-10 px-4 sm:px-10 max-w-screen-lg mx-auto mb-24"
+            >
+                <div class="text-entry">
+                    <div class="prose mb-6 max-w-sm">
+                        <h4>Where is Nova located?</h4>
+                        <p>
+                            Nova is located in south ari atoll, just a 25 minute
+                            speedboat ride from Male’ International Airport.
+                            South Ari Atoll is a top underwater location has
+                            some of the best locations for diving and snorkeling
+                            in the Maldives, with over 30+ manta points/whale
+                            sharks points/ship wrecks and dive locations just
+                            within a close 40 min range from the island, making
+                            Nova a unique spot for those looking for the
+                            ultimate marine adventure.
+                        </p>
+                        <h4>When is Nova Maldives opening?</h4>
+                        <p>Nova Maldives is set to open in April, 2022.</p>
+                    </div>
+                    <div class="actions space-y-2">
+                        <div class="line-button group">
+                            <a
+                                href="#"
+                                class="inline-block text-base font-bold py-3 text-sapphire-blue-900 hover:text-sapphire-blue-500 transition ease-out duration-150"
+                                >Read our FAQs
+                            </a>
+                            <span
+                                class="block relative w-[80px] h-[2px] bg-sapphire-blue-900 overflow-hidden"
+                            >
+                                <span
+                                    class="absolute inset-0 w-[80px] h-[2px] bg-sapphire-blue-400 -translate-x-[80px] group-hover:animate-draw-line overflow-hidden transition duration-150 ease-out"
+                                ></span>
+                            </span>
+                        </div>
+                        <div class="line-button group">
+                            <a
+                                href="#"
+                                class="inline-block font-bold py-3 text-sapphire-blue-900 hover:text-sapphire-blue-500 transition ease-out duration-150"
+                                >Contact Us to plan your Nova escape</a
+                            >
+                            <span
+                                class="block relative w-[80px] h-[2px] bg-sapphire-blue-900 overflow-hidden"
+                            >
+                                <span
+                                    class="absolute inset-0 w-[80px] h-[2px] bg-sapphire-blue-400 -translate-x-[80px] group-hover:animate-draw-line overflow-hidden transition duration-150 ease-out"
+                                ></span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="visual relative">
+                    <img
+                        class="aspect-[3/4]"
+                        src="https://images.unsplash.com/photo-1592817470020-bad302a13001?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"
+                        alt=""
+                    />
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20">
+            <div
+                class="container px-4 sm:px-10 max-w-screen-xl mx-auto grid grid-cols-1 sm:grid-cols-5 mb-24"
+            >
+                <h1
+                    class="col-span-1 sm:col-span-5 text-5xl sm:text-7xl font-title font-extralight text-sunset-yellow-500 max-w-md"
+                >
+                    Connect with Nova
+                </h1>
+                <div
+                    class="col-span-1 sm:col-span-5 md:col-start-3 lg:-translate-y-16 my-10 sm:my-0"
+                >
+                    <p class="text-gray-600 text-base mb-3">
+                        Subscribe to our newsletter
+                    </p>
+
+                    <div>
+                        <input
+                            type="text"
+                            placeholder="email address"
+                            class="text-lg font-title py-2 px-0 w-72 bg-transparent text-sapphire-blue-500 placeholder:text-gray-400 focus:ring-0 focus:px-2 focus:outline-none transition duration-300 ease-out"
+                        />
+                    </div>
+
+                    <button type="submit" class="line-button group">
+                        <span
+                            class="inline-block font-bold py-3 text-sapphire-blue-900 hover:text-sapphire-blue-500 transition ease-out duration-150"
+                            >Subscribe</span
+                        >
+                        <span
+                            class="block relative w-[80px] h-[2px] bg-sapphire-blue-900 overflow-hidden"
+                        >
+                            <span
+                                class="absolute inset-0 w-[80px] h-[2px] bg-sapphire-blue-400 -translate-x-[80px] group-hover:animate-draw-line overflow-hidden transition duration-150 ease-out"
+                            ></span>
+                        </span>
+                    </button>
+                </div>
+
+                <div class="insta-feed sm:col-span-5">
+                    <div class="grid grid-cols-3 sm:grid-cols-5 gap-4">
+                        <div class="aspect-square w-full h-full bg-gray-300">
+                            1
+                        </div>
+                        <div class="aspect-square w-full h-full bg-gray-300">
+                            2
+                        </div>
+                        <div class="aspect-square w-full h-full bg-gray-300">
+                            2
+                        </div>
+                        <div class="aspect-square w-full h-full bg-gray-300">
+                            2
+                        </div>
+                        <div class="aspect-square w-full h-full bg-gray-300">
+                            2
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div
+                class="container px-4 sm:px-10 max-w-none xl:max-w-screen-2xl mx-auto py-2 lg:py-14 grid grid-cols-1 lg:grid-cols-2 items-end font-body font-normal text-sapphire-blue-500"
+            >
+                <div>
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 358 186"
+                        xml:space="preserve"
+                        class="w-56 mx-auto sm:mx-0 text-sapphire-blue-500"
+                    >
+                        <use xlink:href="#nova-logo" />
+                    </svg>
+                </div>
+
+                <div>
+                    <nav
+                        class="flex flex-col space-y-6 py-8 lg:py-0 text-center lg:flex-row lg:items-center lg:justify-end lg:space-y-0 lg:space-x-8 mb-0 sm:mb-3 text-lg"
+                    >
+                        <a
+                            href="#"
+                            class="hover:text-sapphire-blue-400 transition duration-150 ease-out"
+                            >Villas
+                        </a>
+                        <a
+                            href="#"
+                            class="hover:text-sapphire-blue-400 transition duration-150 ease-out"
+                            >Food
+                        </a>
+                        <a
+                            href="#"
+                            class="hover:text-sapphire-blue-400 transition duration-150 ease-out"
+                            >Experiences</a
+                        >
+                        <a
+                            href="#"
+                            class="hover:text-sapphire-blue-400 transition duration-150 ease-out"
+                            >Spa
+                        </a>
+                    </nav>
+                    <div
+                        class="flex space-x-2 justify-center sm:justify-end mb-6 sm:mb-0"
+                    >
+                        <a
+                            href="#"
+                            class="text-sapphire-blue-900 hover:text-sapphire-blue-500"
+                        >
+                            <svg
+                                class="w-8 h-8 fill-current"
+                                viewBox="0 0 48 48"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M23.781 42H23.074H22.1016C19.816 42 19.1896 41.3736 19.1896 39.0829V29.6782C19.1896 29.1627 19.166 28.4523 18.9595 28.2507C18.7529 28.0492 18.0778 28.0442 17.584 28.0559C16.1028 28.0929 15.1875 28.0055 14.6115 27.4278C13.9985 26.8148 13.975 25.8626 14.0103 24.4822V24.0035C14.0103 23.7617 14.0103 23.535 14.0103 23.32C13.9935 22.1344 13.9801 21.1989 14.6384 20.5675C15.2178 20.0099 16.1498 19.8319 17.9367 19.931C18.4103 19.9579 18.7344 19.894 18.899 19.7412C19.0636 19.5884 19.1812 19.2038 19.1963 18.6362C19.2131 17.8586 19.2064 17.0575 19.1963 16.285C19.1963 15.8864 19.1963 15.4884 19.1963 15.0909C19.1963 10.9227 22.3384 7.11547 26.5067 6.23882C27.6588 5.99867 28.8411 6.0121 29.9848 6.02386C30.5809 6.02386 31.1956 6.03561 31.7834 6.00538C32.5559 5.96508 33.1605 6.15149 33.5837 6.55455C34.0069 6.95761 34.2454 7.59578 34.2454 8.44388V11.6868C34.2454 13.3343 33.3016 14.2798 31.6558 14.2798C31.335 14.2798 31.0142 14.2798 30.6951 14.2882C30.0486 14.2983 29.3818 14.3067 28.7151 14.2781C27.9695 14.2479 27.6067 14.5199 27.4304 15.2522C27.1751 16.3119 27.2322 17.3984 27.2927 18.5488C27.3061 18.7957 27.3179 19.0443 27.3279 19.2894C27.3296 19.3096 27.3296 19.3298 27.3279 19.3499C27.3238 19.4121 27.333 19.4745 27.3548 19.533C27.3653 19.5604 27.3782 19.5868 27.3934 19.6119C27.4104 19.6391 27.4301 19.6644 27.4522 19.6875C27.4714 19.707 27.4922 19.725 27.5144 19.7412C27.5397 19.7588 27.5667 19.774 27.595 19.7866C27.6227 19.7978 27.6514 19.8068 27.6806 19.8134C27.7178 19.82 27.7554 19.8234 27.7931 19.8235C29.0443 19.8705 30.3122 19.9511 31.5348 20.0301C32.1797 20.0704 32.8246 20.1124 33.4695 20.1476C33.5598 20.1529 33.648 20.1769 33.7284 20.2183C33.8088 20.2596 33.8797 20.3174 33.9365 20.3878C33.9933 20.4581 34.0347 20.5396 34.0581 20.627C34.0815 20.7143 34.0864 20.8056 34.0724 20.895L34.0204 21.2191C34.0213 21.2314 34.0213 21.2437 34.0204 21.256L33.8373 22.0957C33.54 23.4611 33.535 23.4863 33.3469 24.111L33.2495 24.4603C32.4249 27.7738 32.173 27.9753 28.7605 28.0626C27.4724 28.0962 27.2927 28.2726 27.2927 29.5237C27.2809 31.146 27.2843 32.7918 27.2927 34.394C27.2927 35.2057 27.2927 36.0168 27.2927 36.8274C27.2927 37.1129 27.2927 37.385 27.2927 37.6386C27.3095 39.7043 27.3195 40.7405 26.6679 41.3921C26.102 41.9328 25.2824 42 23.781 42ZM17.8393 26.7544C18.7395 26.7544 19.4012 26.8669 19.8647 27.3203C20.3803 27.8242 20.4844 28.595 20.4844 29.6715V39.0762C20.4844 40.638 20.5448 40.6985 22.1016 40.6985C22.4543 40.6985 22.7734 40.6985 23.0807 40.6985C24.478 40.7069 25.4856 40.7119 25.7443 40.4533C26.0029 40.1946 26.0046 39.1652 25.9911 37.6235C25.9911 37.3682 25.9911 37.0961 25.9911 36.8039C25.9911 35.9911 25.9911 35.1816 25.9911 34.3722C25.9911 32.775 25.9911 31.1259 25.9911 29.5019C25.9911 27.5487 26.7301 26.8031 28.7185 26.751C30.0402 26.7174 30.8396 26.6973 31.1587 26.4403C31.4777 26.1834 31.6625 25.4126 31.9832 24.1312L32.0168 24.0002C32.0161 23.9901 32.0161 23.98 32.0168 23.9699L32.0907 23.7214C32.2587 23.1504 32.2587 23.1504 32.5559 21.8086L32.6483 21.3837L31.4425 21.3081C30.2299 21.2308 28.9754 21.1502 27.7478 21.1032C27.6349 21.1029 27.5224 21.0911 27.4119 21.0679C27.2967 21.0433 27.1842 21.0073 27.076 20.9605C26.9682 20.915 26.8652 20.8588 26.7687 20.7925C26.6713 20.7261 26.5807 20.6501 26.4983 20.5658C26.417 20.4785 26.3444 20.3835 26.2817 20.282C26.2192 20.1819 26.1674 20.0755 26.1272 19.9646C26.0868 19.8531 26.0581 19.7377 26.0415 19.6203C26.0259 19.5164 26.0197 19.4113 26.023 19.3062C26.0146 19.0745 26.0012 18.841 25.9895 18.6076C25.9273 17.4152 25.8618 16.1826 26.1574 14.9398C26.4765 13.6164 27.3985 12.9245 28.7554 12.9766C29.3852 13.0034 30.0335 12.9951 30.6599 12.985C30.9874 12.985 31.3148 12.9766 31.6406 12.9766C32.5727 12.9766 32.9355 12.6121 32.9355 11.6784V8.43548C32.9355 7.96692 32.8481 7.64784 32.6768 7.48326C32.5055 7.31868 32.2368 7.26997 31.8371 7.28845C31.209 7.32203 30.5725 7.31532 29.9579 7.3086C28.8344 7.29684 27.7747 7.28677 26.7569 7.49669C23.1781 8.25074 20.4777 11.5121 20.4777 15.0826C20.4777 15.4772 20.4777 15.8735 20.4777 16.2682C20.4777 17.0525 20.4894 17.8636 20.4777 18.663C20.4625 19.2676 20.3702 20.1325 19.7639 20.6884C19.3256 21.0915 18.7009 21.2661 17.8544 21.2191C16.5546 21.1469 15.7921 21.2376 15.5217 21.4962C15.2514 21.7548 15.2799 22.3913 15.2933 23.2965C15.2933 23.5165 15.2933 23.7499 15.2933 23.9985V24.5023C15.2698 25.4176 15.2682 26.2606 15.515 26.5075C15.7619 26.7544 16.6906 26.7796 17.5421 26.7561L17.8393 26.7544Z"
+                                />
+                            </svg>
+                        </a>
+
+                        <a
+                            href="#"
+                            class="text-sapphire-blue-900 hover:text-sapphire-blue-500"
+                        >
+                            <svg
+                                class="w-8 h-8 fill-current"
+                                viewBox="0 0 48 48"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M30.3014 10.0157C34.8628 10.0523 37.9477 13.1372 37.9765 17.6921C38.0078 21.8742 38.0078 26.1165 37.9765 30.2999C37.9477 34.8534 34.8628 37.9384 30.3014 37.9763C28.2103 37.992 26.1036 37.9998 23.9968 37.9998C21.8901 37.9998 19.7846 37.992 17.6922 37.9763C15.4756 37.9606 13.5663 37.2152 12.1723 35.8212C10.7783 34.4271 10.0329 32.5231 10.0172 30.2999C9.98762 26.1708 10.0022 21.976 10.0164 17.9141L10.0172 17.696C9.98931 16.3389 10.3118 14.9976 10.9535 13.8016C12.1998 11.5876 14.2359 10.3152 17.0135 10.0092C17.0423 10.0072 17.0711 10.0072 17.0998 10.0092L17.2084 10.0157C18.6591 10.0105 20.1094 10.0078 21.5592 10.0078C24.4244 10 27.3878 9.99215 30.3014 10.0157ZM35.2498 34.9881C36.3444 33.8112 36.9564 32.1399 36.9682 30.2934C36.9996 26.1139 36.9996 21.8768 36.9787 17.6947C36.9669 15.8469 36.3549 14.1756 35.2551 12.9986C34.0663 11.721 32.3545 11.037 30.304 11.02C27.3956 10.9965 24.4349 11.0043 21.5723 11.0122C20.1146 11.0174 18.6582 11.02 17.2031 11.02H17.1718H17.092C14.6439 11.2986 12.9282 12.3683 11.848 14.2894C11.2893 15.334 11.0096 16.5051 11.0359 17.6895V17.7025L11.0351 17.923C11.021 21.9842 11.0063 26.1754 11.0359 30.2986C11.0594 34.2571 13.7416 36.9393 17.7053 36.968C21.8835 36.9994 26.114 36.9994 30.2988 36.968C32.3493 36.9497 34.0611 36.2671 35.2498 34.9881ZM23.6217 18.0725H23.7289C26.2803 17.8868 28.5571 19.3672 29.5078 21.8283C30.4585 24.2895 29.8007 26.8696 27.8313 28.4036C26.5235 29.37 25.1556 29.8578 23.8479 29.8578C22.8756 29.8585 21.9232 29.5827 21.1017 29.0627C19.0342 27.7706 17.8624 25.0806 18.294 22.7071C18.7255 20.3336 20.6348 18.6492 23.5249 18.083C23.5567 18.0762 23.5891 18.0727 23.6217 18.0725ZM21.63 28.2074C23.2882 29.2471 25.2747 29.0313 27.2114 27.5993C29.1586 26.085 29.156 23.7507 28.5544 22.1932C27.9529 20.6357 26.3431 18.8872 23.7838 19.0808H23.6688C21.1971 19.579 19.6383 20.9286 19.2761 22.8902C18.9099 24.8897 19.8986 27.1259 21.63 28.2074Z"
+                                />
+                            </svg>
+                        </a>
+
+                        <a
+                            href="#"
+                            class="text-sapphire-blue-900 hover:text-sapphire-blue-500"
+                        >
+                            <svg
+                                class="w-8 h-8 fill-current"
+                                viewBox="0 0 48 48"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M41.4607 13.0018C41.3958 13.0015 41.3312 13.0128 41.2702 13.0351L38.3103 14.1261C38.3396 14.0049 40.8413 10.6027 40.6455 10.5414C40.6444 10.4434 40.617 10.3474 40.5661 10.2636C40.5153 10.1798 40.4429 10.1111 40.3565 10.0648C40.27 10.0186 40.1727 9.99633 40.0748 10.0005C39.9768 10.0047 39.8818 10.035 39.7996 10.0885L35.8965 12.6328C31.3007 7.73331 21.6949 10.4109 23.436 18.6047C16.7754 17.2899 12.8444 13.8983 9.66729 10.0032C9.55298 10.0037 9.44168 10.0399 9.34899 10.1068C9.2563 10.1736 9.18687 10.2679 9.15043 10.3762C8.6056 11.8783 8.45082 13.4941 8.70058 15.0723C8.95033 16.6505 9.59645 18.1395 10.5785 19.3999C10.0549 19.2667 8.43109 18.0265 8.28323 19.1881C8.10872 22.4571 9.72324 24.9522 13.0908 26.6253L8.80275 27.3779C8.72 27.393 8.64181 27.4269 8.5742 27.477C8.5066 27.5271 8.45138 27.592 8.41278 27.6667C8.37418 27.7415 8.35325 27.8241 8.35157 27.9082C8.3499 27.9923 8.36753 28.0757 8.40312 28.1519C9.34625 30.0754 11.9412 31.9391 15.811 32.2548C13.1894 33.4537 10.1482 33.9612 6.54483 33.808C6.42034 33.8044 6.29837 33.8435 6.19924 33.9189C6.1001 33.9943 6.02979 34.1014 6 34.2223C7.18291 36.5668 15.4779 38.0668 18.1661 37.9975C29.1214 38.2559 38.8391 28.6075 38.3329 17.5976L41.8537 13.9236C41.9257 13.8459 41.9737 13.749 41.9919 13.6446C42.01 13.5402 41.9976 13.4328 41.956 13.3353C41.9145 13.2379 41.8456 13.1545 41.7577 13.0953C41.6698 13.0361 41.5667 13.0036 41.4607 13.0018V13.0018ZM37.3672 16.9981C37.8547 31.5674 22.4569 41.4037 8.93596 34.8963C10.8689 35.0082 18.0676 33.5256 18.4366 31.5661C18.3992 31.4525 18.3258 31.3541 18.2274 31.2861C18.1291 31.218 18.0112 31.184 17.8917 31.1891C13.8421 31.4409 11.0194 30.0075 9.77519 28.3184L15.081 27.3779C17.5374 26.0458 9.44083 25.7887 9.3689 20.0513C9.4728 20.0633 12.5873 21.5819 12.6152 21.4687C12.7221 21.466 12.8258 21.4321 12.9136 21.3713C13.0015 21.3105 13.0697 21.2254 13.1098 21.1264C13.15 21.0274 13.1604 20.9188 13.1398 20.8139C13.1191 20.7091 13.0683 20.6126 12.9936 20.5362C10.2081 17.8107 9.18374 14.9507 9.8751 11.8176C12.851 15.8285 17.62 18.5527 24.0794 19.8768C24.1736 19.8944 24.2708 19.8872 24.3614 19.8559C24.452 19.8247 24.5329 19.7703 24.5962 19.6983C24.6595 19.6263 24.703 19.5391 24.7224 19.4452C24.7417 19.3513 24.7364 19.254 24.7068 19.1628C22.1758 11.9135 31.2754 8.63915 35.4383 13.7012C35.5245 13.7937 35.64 13.8535 35.7653 13.8705C35.8906 13.8875 36.0179 13.8606 36.1256 13.7944L38.0705 12.5143L36.436 14.9227C36.382 15.005 36.3512 15.1002 36.3466 15.1985C36.3421 15.2968 36.364 15.3945 36.4102 15.4813C36.4564 15.5682 36.525 15.6411 36.609 15.6923C36.693 15.7436 36.7892 15.7713 36.8876 15.7726C36.8197 15.8685 39.372 14.8721 39.4013 14.8734C39.4013 14.8721 37.3685 16.9968 37.3672 16.9968V16.9981Z"
+                                />
+                            </svg>
+                        </a>
+                        <a
+                            href="#"
+                            class="text-sapphire-blue-900 hover:text-sapphire-blue-500"
+                        >
+                            <svg
+                                class="w-8 h-8 fill-current"
+                                viewBox="0 0 48 48"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M8 12.8499C8 10.607 9.76526 9 12.1736 9C14.5805 9 16.2403 10.607 16.3472 12.8499C16.3472 15.1 14.5805 16.707 12.1736 16.707H12.0667C9.71107 16.707 8 15.0929 8 12.8499ZM8.85554 12.9098C8.85554 14.6794 10.193 15.9627 12.1736 15.9627C14.1528 15.9627 15.4903 14.678 15.4903 12.8556C15.4375 11.0348 14.1 9.80278 12.1736 9.80278C10.193 9.80278 8.85554 11.0889 8.85554 12.9098ZM31.8239 18.2041C28.9351 18.2041 27.2767 19.4361 26.2059 20.6681V19.0611C26.2059 18.9476 26.1608 18.8388 26.0806 18.7586C26.0004 18.6784 25.8915 18.6333 25.7781 18.6333H19.1334C18.8796 18.6618 18.7712 18.7759 18.7584 19.0611C18.8593 20.0444 18.8223 24.3579 18.7846 28.7584V28.7585C18.7408 33.8723 18.6959 39.1034 18.8653 39.3617C18.9385 39.4292 19.0338 39.4678 19.1334 39.4701H25.7681C26.4044 39.7906 26.2799 34.5486 26.1958 31.0131V31.0131C26.1546 29.28 26.1232 27.957 26.1959 27.9003C26.2144 26.1892 26.8789 24.4111 29.4584 24.2043C31.4389 24.2043 32.4014 25.596 32.4014 28.3281V39.0409C32.4014 39.1543 32.4465 39.2631 32.5267 39.3434C32.6069 39.4236 32.7158 39.4686 32.8292 39.4686H39.4639C39.5774 39.4686 39.6862 39.4236 39.7664 39.3434C39.8466 39.2631 39.8917 39.1543 39.8917 39.0409C39.854 37.8899 39.892 36.5269 39.9331 35.0574C40.1371 27.7543 40.4146 17.8207 31.8239 18.2041ZM39.096 38.72H33.2099V28.3822C33.2099 25.221 31.8724 23.4529 29.4655 23.4529C27.7544 23.4529 26.3613 24.4724 25.6655 26.1322C25.2986 26.7341 25.357 31.8428 25.3976 35.3941V35.3942C25.4163 37.0334 25.4312 38.3409 25.3988 38.72H19.5612C19.5612 38.0936 19.5644 36.8062 19.5685 35.174L19.5685 35.1731L19.5685 35.1723C19.5812 30.1169 19.6021 21.7569 19.5612 19.4903H25.3945C25.4144 19.5903 25.4041 19.9741 25.3921 20.4217C25.3723 21.1617 25.3478 22.0757 25.4473 22.1681C25.5799 22.479 26.2059 22.4248 26.1959 22.0612C27.1598 20.6139 28.6584 19.0083 31.814 19.0083C39.5989 18.6086 39.3271 27.7487 39.1251 34.5421C39.0785 36.108 39.0357 37.5491 39.096 38.72ZM15.5171 18.6307H8.82956C8.71611 18.6307 8.6073 18.6757 8.52707 18.7559C8.44685 18.8362 8.40179 18.945 8.40179 19.0584V39.0924C8.40179 39.2058 8.44685 39.3146 8.52707 39.3949C8.6073 39.4751 8.71611 39.5202 8.82956 39.5202H15.4629C15.5763 39.5202 15.6851 39.4751 15.7654 39.3949C15.8456 39.3146 15.8906 39.2058 15.8906 39.0924V19.0028C15.8914 18.9536 15.8823 18.9047 15.8637 18.8591C15.8452 18.8135 15.8177 18.7721 15.7829 18.7374C15.748 18.7027 15.7065 18.6753 15.6608 18.657C15.6151 18.6386 15.5663 18.6297 15.5171 18.6307ZM15.0893 38.6646H9.25733V19.4306H15.0893V38.6646Z"
+                                />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <svg class="hidden">
+            <defs>
+                <g id="nova-logo">
+                    <path
+                        d="M60.1 165.3L51.4 184.9H53.2L56 178.4H64.2L67 184.9H70.1L61.5 165.3H60.1ZM56.7 176.9L60.2 168.9L63.7 176.9H56.7ZM236.5 20.2C237 20.5 237.8 20.8 238.4 20.9C239.4 21.1 240.4 21.1 241.4 21.3C242.9 21.6 244.1 22.3 244.7 23.7C245.2 24.7 245.5 25.8 245.7 26.9C246.3 29.3 246.7 31.8 247.3 34.2C247.5 35 248 35.4 248.5 36C248.8 36.4 249.3 36.3 249.5 35.8C249.7 35.2 250 34.5 250 33.9C249.9 32.3 249.7 30.7 249.6 29.2C249.5 27.8 249.3 26.4 249.3 25C249.3 22.2 250.4 20.7 253.2 19.7C254.1 19.4 255.1 19.2 255.9 18.9C256.4 18.7 257.2 18.2 257.2 17.9C257.2 17.4 256.7 17.2 256.5 17.1C256 16.9 255.5 16.7 254.9 16.6C251.5 16 249.4 14.6 248.6 11.5C248 9 247.5 6.5 246.9 3.9C246.7 2.8 246.5 1.7 246.3 0.6C246.2 0.4 246.1 0 245.8 0C245.5 0 245.3 0.4 245.2 0.6C245.1 0.8 245.1 1.1 245.1 1.3C245 2.8 244.8 4.4 244.7 5.9C244.4 8.8 244.2 11.6 242.9 14.3C242 16.1 240.6 17.6 238.7 18.4C238 18.7 237.4 19 236.8 19.3C236.3 19.5 236.1 20 236.5 20.2ZM242.4 18C243.9 16.4 245.1 14.6 245.6 12.5C245.7 12.3 245.9 11.9 246 11.9C246.2 11.9 246.4 12.2 246.5 12.4C247.4 14.4 248.7 16 250.6 17.1C251.1 17.4 251.2 17.7 250.7 18.1C248.9 19.3 248.3 21 247.8 22.9C247.7 23.2 247.6 23.7 247.4 23.8C247.1 23.9 246.8 23.4 246.5 23.1C245.4 21.1 244.8 19.9 242.3 19C242 18.8 242 18.4 242.4 18ZM17.6 180.8L11.2 165.3H8.00001V184.9H9.7V169L16.1 184.5H18L24.6 168.9V184.9H27.4V165.3H24.3L17.6 180.8ZM97 165.3H94.1V184.9H108.5V183.5H97V165.3ZM291 173.4C288 172.3 286.6 171.7 286.6 169.5C286.6 167.6 288.2 166.5 290.7 166.5C292.9 166.5 294.1 167 295.3 167.7L296 168.1V166.2L295.8 166.1C294.5 165.4 293 165.1 290.8 165.1C287 165.1 284.2 167.3 284.2 170.3C284.2 173.9 286.9 175.1 290.1 176.2C293.3 177.3 294.9 178.2 294.9 180.4C294.9 182.7 293.2 183.8 289.9 183.8C287.9 183.8 286.1 183.3 284.8 182.3L284.1 181.8V183.8L284.3 183.9C285.7 184.8 287.7 185.3 289.9 185.3C294.6 185.3 297.4 183.2 297.4 179.7C297.3 175.9 294.8 174.7 291 173.4ZM357.2 80.2C356.1 79.9 354.8 79.5 353.9 79.2C350.5 82.3 347.5 85.1 344.4 87.8C332.4 98.3 318.7 106.1 303.9 112.1C301.5 113.1 298.9 113.8 296.3 114.2C292 114.9 290 113.6 288.7 109.5C288.1 107.6 287.8 105.6 287.2 103.7C286.3 100.4 285.7 96.9 284.4 93.7C281.8 87.4 275.6 85.5 269.8 89C267.7 90.3 265.7 92 263.9 93.7C261.5 95.9 259.3 98.3 256.9 100.6C255.5 102 253.9 103.2 251.7 103.4C250.1 101.6 250.1 99.6 251 97.7C253.3 93 255.6 88.2 258.2 83.7C259.3 81.9 261.1 80.3 262.8 79C264.8 77.4 267.3 76.7 270.3 77.4C271.9 80.2 273.7 83.1 275.4 86.1C277 85.9 278.2 85.8 279.6 85.6C279.4 80.3 276.6 77.1 272.5 75C267.6 72.4 263 72 258.9 73.3C255.8 74.3 253.3 74.5 251.6 75.1C248.4 76.2 241.7 73.9 238.4 73.3C235 72.7 228.1 70.8 224.7 70C223.9 69.9 224.2 69.1 224.5 68.6C224.9 67.9 231 57.4 230.7 56.5C230.6 56.2 230.2 56.2 229.8 56.3C227.6 56.8 223.5 56.3 222.4 57.5C219.1 61.2 206.6 91.8 203.7 95.8C200.9 99.7 198.5 104 195.9 108.1C195.3 109 194.6 109.8 193.9 110.8C192.4 105.7 192.3 100.9 192.2 96C192.1 86.8 192 77.7 191.6 68.5C191.5 65.3 190.7 62.1 189.9 58.9C189.4 56.9 188 56 186.1 56.3C183.7 56.7 181.4 57.3 178.7 58C176.4 65.9 177.9 74 178.1 82C169.6 89.2 161.3 91.8 149.9 91.2C149.4 86.7 149.4 82.2 147.1 77.9C144.9 73.7 142.2 70.2 138.1 68C138.3 66.7 138.5 65.7 138.5 64.6C138.8 60.5 135.9 58.1 131.9 58.9C130.7 59.2 129.5 59.7 128.4 60.2C127.7 60.5 127.1 61 126.4 61.2C122.9 62 117.9 68.9 116.4 73.1C115.6 75.4 106.6 97.5 104.1 102.9C101.9 108.8 96.7 114.3 93.1 116.7C90.7 118.3 85.9 120.9 83 120.9C74.9 121 74.4 96.7 73.8 94.3C72 87.4 69.9 80.5 65.7 74.6C61.2 68.3 53.8 67.3 47.7 72.1C38.2 79.5 30 88.3 23.6 98.6C22.4 100.6 20.9 102.4 19.4 104.1C18.2 105.4 16.6 106 14.5 104.8C14.3 103.7 13.9 102.4 14 101.1C14.3 96.1 14.8 91 15.3 86C15.9 79.2 16.6 72.3 15.6 65.5C15.1 62.4 14.3 59.3 13.1 56.4C11.8 53.4 9.5 52.8 6.6 53.9C5.6 54.3 4.70001 54.7 3.50001 55.1C3.30001 56 3.00001 57 2.80001 58C2.30001 62.6 1.70001 67.2 1.40001 71.8C0.500008 87.7 0.500005 103.6 2.30001 119.5C2.60001 121.9 2.80001 124.6 4.50001 126.5C10.1 128.7 16.4 127.5 19.7 121.7C20.7 120 21.6 118.2 22.6 116.5C24.7 112.7 26.7 108.9 29.1 105.3C33.3 99 37.7 92.8 42.2 86.7C44.2 83.9 46.6 81.3 49 78.8C50.3 77.5 52 76.5 53.7 75.7C56 74.6 57.6 75.3 58.6 77.5C59.3 79 59.8 80.6 60.2 82.3C62.3 91.3 66.4 115.1 71.2 123C72.3 124.8 73.9 125.8 76 126.3C80.4 127.4 85.5 126.6 89.4 125C95.3 122.6 98.4 119.4 104.3 113.4C111.6 103 110.5 103.1 112.6 98.4C112.6 104.6 112.3 102.9 112.5 108.5C112.7 112.1 113.2 115.9 114.3 119.4C117.4 129.4 128.4 131.9 135.6 124.4C139.9 119.9 143.5 114.9 145 108.6C146 104.4 147.4 100.3 148.7 96.1C159.4 95.7 169.8 94.4 178.2 86.2C178.5 88 178.6 89.1 178.8 90.2C179.9 96 180.8 101.8 182.1 107.5C182.9 111 184.3 114.3 186.7 117.1C189.5 120.4 193.3 120.9 196.8 118.3C198 117.4 199.2 116.2 200 114.9C201.6 112.4 202.8 109.7 204.3 107.2C207.1 102.1 209.9 97.1 212.8 92.1C213.9 90.3 219.3 79 220.7 77.5C222 74.7 222.1 73.8 229.7 75.5C236.9 77.1 247.4 79.9 247.8 79.9C245.1 83.5 242.5 92.4 241.8 95.8C240.9 100.1 243.1 104.4 246.7 106.6C249.6 108.4 255.9 108 258.6 105.3C261 102.8 263.7 100.5 266.3 98.3C268.6 96.4 271 94.7 273.4 93C273.9 92.6 274.7 92.6 275.6 92.3C276 93.8 276.4 95.1 276.8 96.4C278 100.7 279 105 280.4 109.1C282.6 115.3 287.3 118.1 293.8 118.3C300.7 118.5 307.1 116.3 313.3 113.5C326.9 107.5 339.1 99.3 350.5 89.8C352.4 88.2 354.2 86.3 356 84.5C357.3 83.5 358.2 82.3 357.2 80.2ZM132.8 116.9C131.4 119.2 129.8 121.5 126.6 122C124.7 120.9 124.1 118.9 124 116.9C123.7 111.7 123.5 106.4 123.6 101.2C123.7 96.9 124.3 92.6 124.7 88.3C124.8 87.7 125 87.1 125.2 86.1C129.6 91.1 134.8 94.2 141.1 95.6C138.9 103.1 136.8 110.4 132.8 116.9ZM133 88.5C132.1 87.6 131.1 86.8 130.2 85.9C127.6 83.5 126.9 80.3 128.1 77C128.2 76.7 128.3 76.4 128.5 76.1C130.4 71.5 132.7 70.9 136.6 74.1C139.6 76.5 141.6 79.4 141.7 83.5C141.8 86 142.3 88.5 142.7 91.6C138.9 91.2 135.6 91.1 133 88.5ZM249.6 175.1H257.4V173.7H249.6V166.7H260.6V165.3H246.7V184.9H260.8V183.5H249.5V175.1H249.6ZM140.8 165.3H132.9V184.9H140.8C147.2 184.9 151.6 180.9 151.6 175.1C151.6 169.4 147.1 165.3 140.8 165.3ZM140.6 183.4H135.9V166.7H140.6C145.8 166.7 148.7 169.7 148.7 175C148.7 178.9 147.3 183.4 140.6 183.4ZM213.9 181.4L207.1 165.3H204L212.4 184.9H214.2L222.6 165.3H220.8L213.9 181.4ZM177 184.9H179.9V165.3H177V184.9Z"
+                        fill="currentColor"
+                    />
+                </g>
+
+                <g id="nova-mark">
+                    <path
+                        fill="currentColor"
+                        d="M578.6 385.6c-8.7-3.9-18.1-6.6-27.5-8.4-60.7-11.4-97.3-35.3-110.9-90.7-11-44.8-20.2-89.9-29.8-134.9-4.1-19.4-6.6-39.1-11-58.4-.9-4.3-2.8-11.1-9.7-11.4-6.1.2-8.2 6.4-10.7 10.6-2.1 3.7-2.1 8.6-2.5 13-2.6 27.6-5 55.2-7.6 82.8-4.8 50.7-8.4 101.6-31.9 148.8-16.5 33-40.1 58.4-74.8 73.9-11.6 5.2-23.2 10.6-34.6 16.4-8.6 4.4-12.9 12.1-5.1 16.8 9.4 5.6 23.6 9.9 34.3 12.1 17.5 3.6 35.8 4.2 53.4 7.3 26.9 4.7 48.2 18.6 59.2 42.9 8.1 18 13.8 37.2 18.2 56.4 9.9 43 17.3 86.5 28 129.3 3.3 14.6 12.8 22 21 31.8 6 7.2 13.9 4.8 17-3.2 4.1-11 8.9-22.8 8.6-34.1-.9-28.2-4.7-56.2-7-84.3-2.1-25.2-5.3-50.3-5.1-75.5.3-50.7 19.8-76.1 69.4-93.5 15.9-5.6 32.9-8.5 48.4-14.8 8.5-3.4 23.8-11.7 23.8-18.4.5-8.9-8.7-12.6-13.1-14.5M474.9 406c-31.1 20.7-42.8 51.7-50.8 85.1-1.1 4.7-3.1 14.6-7.1 15.2-5.3 2-11.2-7.9-15.1-11.7-18.7-36.4-29.4-56.2-74.2-72.7-8.5-3.1-7.2-10.9-.8-17.4 27.4-28.3 47.8-60.4 57.2-98.5.9-3.7 4.9-9.9 7.6-10 3.6-.3 7.4 5.2 8.9 8.7 15.4 35.1 38.3 64 72.7 83.8 8.4 4.9 10.7 11.5 1.6 17.5"
+                    />
+                </g>
+            </defs>
+        </svg>
+
+        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

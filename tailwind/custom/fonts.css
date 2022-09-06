@@ -1,0 +1,45 @@
+/**
+ * Custom `@font-face` rules
+ *
+ * These will be added immediately before Tailwind’s `base` layer.
+ */
+
+@font-face {
+    font-family: "SilkSerif";
+    src: url("fonts/SilkSerif-ExtraLight.woff2") format("woff2"),
+        url("fonts/SilkSerif-ExtraLight.woff") format("woff"),
+        url("fonts/SilkSerif-ExtraLight.ttf") format("truetype");
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "SilkSerif";
+    src: url("fonts/SilkSerif-Regular.woff2") format("woff2"),
+        url("fonts/SilkSerif-Regular.woff") format("woff"),
+        url("fonts/SilkSerif-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "AzoSans";
+    src: url("fonts/AzoSans-Bold.woff2") format("woff2"),
+        url("fonts/AzoSans-Bold.woff") format("woff"),
+        url("fonts/AzoSans-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "AzoSans";
+    src: url("fonts/AzoSans-Light.woff2") format("woff2"),
+        url("fonts/AzoSans-Light.woff") format("woff"),
+        url("fonts/AzoSans-Light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
